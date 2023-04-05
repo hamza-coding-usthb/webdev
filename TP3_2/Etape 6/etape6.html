@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="style.css" type="text/css"/>
+			
+			<title>
+				EXO TP3 PARTIE 2
+			</title>
+			<meta charset="UTF-8">
+		</head>
+		<body>
+		<div id="form_container">
+			<div class ="form_group">
+				<label class ="form_label">Nom:</label>
+				<input type="text" id="form_nom" class="form_fiels"/>
+			</div>
+			<div class ="form_group">
+				<label class ="form_label">Prenom:</label>
+				<input type="text" id="form_prenom" class="form_fiels"/>
+			</div>
+			<div class ="form_group">
+				<label class ="form_label">Points:</label>
+				<input type="text" id="form_points" class="form_fiels"/>
+			</div>
+			<button class ="btn-add" onclick="doNewData()">Ajouter</button>
+		</div>
+		
+		<div id="table_container">
+			<table id ="tab" border="1">
+			<tr>
+				<th>N°</th>
+				<th>Non</th>
+				<th>Prénom</th>
+				<th>Point</th>
+				<th>Select</th>
+			</tr>
+		</table>
+		<div id= "container_summary">
+			<p id="p1">0 ligne(s)</p>
+			<p id ="p2"></p>
+			<p id ="p3">Totale point(s) = 0</p>
+		</div>
+		<div id="container_btn">
+		<button class="btn-del" onclick="deleteRow()">Supprimer</button> <!--Cliquer sur le button supprimer déclenche la fonction deleteRow-->
+		<button class="btn-consol" onclick="consoleTableau()">Console Tableau</button>
+		
+		</div>
+		</div>
+		
+		</body>
+		<script src="script.js"></script>
+	</html>
+
+

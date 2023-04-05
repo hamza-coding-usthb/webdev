@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script src ="manip2.js"></script>
+		</head>
+		<body>
+			<button onclick="etu()">Tableau Etudiants</button>
+			<button onclick="objet()">Objet Etudiant</button>
+			<button onclick="printEtu()">Tableau d'objets Etudiants</button>
+		</body>
+		
+	</html>
+	

@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+			<button onclick="console.log('Hola el mundo!!!')">afficher</button>
+		</body>
+	</html>

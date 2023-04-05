@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				body{
+				 background-color:#91A1F0;
+				 font-family: Arial, sans-serif;
+				}
+				span, #obli{
+					
+					
+					color:red;
+					
+					
+				}
+				
+				.block{
+					position:relative;
+					background-color:white;
+					width: 67%;
+					min-height:120px;
+					padding:10px;
+					margin:10px auto;
+					border-radius: 10px;
+				}
+				.title{
+					display:block;
+					
+					font-size:18px;
+					position:absolute;
+					top:20%;
+				}
+				.end{
+					background-color:#91A1F0;
+					width: 67%;
+					padding:10px;
+					margin:10px auto;
+					border-radius: 10px
+				}
+				#btn1{
+					float:left;
+					width:auto;
+					margin:10px;
+					background-color:blue;
+					color:#91A1F0;
+					border-radius: 5px;
+					height:35px;
+					width:125px;
+				}
+				#btn2{
+					float:right;
+					background-color:#91A1F0;
+					width:auto;
+					margin:10px;
+					height:35px;
+					border-radius: 5px;
+					color:blue;
+				}
+				.btn{
+					height:32px;
+					cursor:pointer;
+					border:0px;
+					
+					font-weight:bold;
+				}
+				#image{
+					background-color:white;
+					width: 67%;
+					padding:10px;
+					margin:10px auto;
+					border-radius: 10px;
+					height:auto;
+					text-align: center;
+					overflow:hidden;
+				}
+				img{
+					width: 25%;
+					height:auto;
+					float:left;
+					position:relative;
+				}
+				input[type=text]{
+					position:absolute;
+					bottom:20%;
+					width:50%;
+					 border: none;
+					border-bottom: 2px solid grey;
+					
+				}
+				.rad{
+					
+					
+					display:block;
+
+				}
+				input[type=tel]{
+					position:absolute;
+					bottom:20%;
+					width:50%;
+					 border: none;
+					border-bottom: 2px solid grey;
+				}
+				input[type=email]{
+					position:absolute;
+					bottom:20%;
+					width:50%;
+					 border: none;
+					border-bottom: 2px solid grey;
+				}
+				#radio1, #radio2{
+					
+					position:absolute;
+					bottom:20%;
+				}
+				
+				select{
+				width:25%;
+				position:absolute;
+					bottom:20%;
+				}
+				*:focus {
+					outline: none;
+				}
+				
+				
+			</style>
+			
+			
+			<title>
+				EXO7 TP4
+			</title>
+			<meta charset="UTF-8"/>
+		</head>
+		<body>
+		
+			<div id="image">
+				<img src="usthb.jpg"/>
+				<h3> جامعة العلوم والتكنولوجيا هواري بومدين</h3>
+				<h3>   <u>     Université des Sciences et Technologies Houari Boumedienne    </u>   </h3>
+				<h1>Faculté D'informatique</h1>
+			</div>
+			<div class="block">
+				<h1>TP 4-1: Fiche Projet de fin d'études (Licence/Master), Filière Informatique</h1>
+				<p>Le nom et la photo associés à votre compte Google seront enregistrés lorsque vous importez des fichiers et que vous enverrez ce formulaire. Votre adresse e-mail ne fait pas partie de votre réponse</p>
+				<p id="obli">* Obligatoire</p>
+			</div>
+			<form action="page_enregistrement.html" method="POST">
+			<div class="block">
+				<label for="fam_name" class="title"><p>Nom <span>*</span></p></label>
+				<input type="text" id="fam_name" name="fam_name" placeholder="Votre réponse" required / >
+			</div>
+			<div  class="block">
+				<label for="fir_name" class="title"><p>Prénom <span>*</span></p></label>
+				<input type="text" id="fir_name" name="fir_name" placeholder="Votre réponse" required />
+			</div>
+			
+			<div class="block">
+				<label for="mat" class="title"><p>Matricule <span>*</span></p></label>
+				<input type="text" id="mat" name="mat" placeholder="Votre réponse" pattern="[0-9]{12}" required />
+			</div>
+			
+			<div class="block">
+				<label for="email" class="title">Email <span>*</span></label>
+				<input type="email" id="email" name="email" required />
+			</div>
+			<div class="block">
+				<label for="tele" class="title"">Téléphone </label>
+				<input type = "tel" id="tele" name="tele" placeholder="saisir num telephone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="Votre réponse"/>
+			</div>
+			
+			
+	
+			<div class="block" ><p class="title">Palier <span>*</span></p>
+			<div id="radio1">
+				<div class ="rad">
+				<input type="radio" id="Licence" name="niveau" value="licence" required />
+				<label for="Licence">Licence</label>
+				</div>
+				
+			
+				<div class ="rad">
+				<input type="radio" id="Master" name="niveau" value="master"  />
+				<label for="Master">Master</label>
+				</div>
+			</div >
+				
+			</div>
+			
+			<div class="block"> <p class="title">Spécialité <span>*</span></p>
+				<select name="spec" id="spec" placeholder ="Sélectionner" required >
+				<optgroup label="Licence">
+					<option value="ACAD">ACAD</option>
+					<option value="GTR">GTR</option>
+					<option value="ISIL">ISIL</option>
+				<optgroup label="Master">
+					<option value="SII">SII</option>
+					<option value="BIGDATA">BIGDATA</option>
+					<option value="RSD">RSD</option>
+					<option value="SSI">SSI</option>
+					<option value="HPC">HPC</option>
+					<option value="IL">IL</option>
+					<option value="MIND">MIND</option>
+					<option value="IV">IV</option>
+				</select>
+			</div>
+			<div class="block" ><p class="title">Type de Projet <span>*</span></p>
+				<div id= "radio2">
+				<div class ="rad">
+				<input type="radio" id="int" name="projet" value="interne"  required />
+				<label for="int">Interne</label>
+				</div>
+				
+			
+				<div class ="rad">
+				<input type="radio" id="ext" name="projet" value="externe"  />
+				<label for="ext">Externe</label>
+				</div>
+				</div>
+				
+			</div>
+			
+				
+			<div class="block" required>Domaine <span>*</span>
+				<div>
+					<input type="checkbox" id="GL_SI_BD" name="Domaine" value="GL_SI_BD" />
+					<label for="GL_SI_BD">Génie Logiciel, Système d'information et Base de Données</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="RS_RB_SE" name="Domaine" value="RS_RB_SE"/>
+					<label for="RS_RB_SE">Réseaux Sécurité, Réseaux Mobiles et Système D'Exploitation</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="IA_MH" name="Domaine" value="IA_MH"/>
+					<label for="IA_MH">Intelligence Artificielle et Méta Heuristiques</label>
+				</div>
+				<div>
+					<input type="checkbox" id="DW_M" name="Domaine" value="DW_M"/>
+					<label for="DW_M">Développement Web et Mobile</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="archi" name="Domaine" value="archi"/>
+					<label for="archi">Architecture</label>
+				</div>
+				<div>
+					<input type="checkbox" id="VI" name="Domaine" value="VI"/>
+					<label for="">Vision et Imagerie</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" id="IT" name="Domaine" value="IT"/>
+					<label for="">Informatique Théorique</label>
+				</div>
+				<div>
+					<input type="checkbox" id="bioinfo" name="Domaine" value="bioinfo"/>
+					<label for="">Bioinformatique</label>
+				</div>
+				
+				
+			</div>
+				
+			
+			<div class="block">
+				<label for="intitule" class="title">Intitulé du Projet <span>*</span> </label>
+				<input type="text" id="intitule" name="intitule" placeholder="Votre réponse" required />
+			</div>
+			<div class="block">
+				<label for="resume" class="title">Résumé du Projet <span>*</span> </label>
+				<input type="text" id="resume" name="resume" placeholder="Votre réponse" required />
+			</div>
+			<div class="end">
+				<input id="btn1" class="btn" type="submit" value="Submit">
+				<input id="btn2" class="btn" type="reset" value="Effacer le Formulaire">
+			</div>
+			
+			</form>
+			
+			
+			
+		</body>
+		
+	</html>
+
+

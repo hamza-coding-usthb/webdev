@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script>
+				function greeting(){
+					console.log("Hello world!!!");
+				};
+			</script>
+		</head>
+		<body>
+			<button onclick="greeting()">afficher</button>
+		</body>
+		
+	</html>
+	

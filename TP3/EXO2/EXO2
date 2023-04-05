@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script src ="manip.js"></script>
+		</head>
+		<body>
+			<button onclick="console.log(nom)">Nom</button>
+			<button onclick="console.log(prenom)">Prénom</button>
+			<button onclick="console.log(nom + ' '+ prenom)">Nom & Prénom</button>
+			<button onclick="console.log(age)">Age</button>
+			<button onclick="console.log(note)">Note</button>
+			<button onclick="console.log(pi)">Pi</button>
+		</body>
+		
+	</html>
+	

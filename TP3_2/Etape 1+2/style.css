@@ -1,0 +1,31 @@
+table,td,th{
+	border-collapse:collapse; /* ceci permet d'élimininer les bordures internes des cellules */
+	border:1px solid #DDDDDD;
+}
+table{
+	width:100%; /*Le tableau prent la totalité de l'espace "le contenu" de l'élement père */
+}
+td,th{
+	height:35px;
+}
+th{
+	background-color:#017eba; /*La couleur des titres des collonnes*/
+	color:white;
+	font-size:13pt;
+}
+.col_number{ /*la cellule qui contient les points*/
+	text-align:center;
+	width:10%;
+}
+.col_text{ /*les cellules qui contient du texte*/
+	padding-left:10px;
+	width:35%;
+}
+.col_chkbox{ /*la cellule qui contient la case à cocher*/
+	text-align:center;
+	width:10%;
+}
+#table_container{
+	margin:50px 150px;
+	font-family: Calibri, Times; /*La police d'écriture primaire est "Calibri" en cas d'abscence de cette police "Times" sera utilisé*/
+}

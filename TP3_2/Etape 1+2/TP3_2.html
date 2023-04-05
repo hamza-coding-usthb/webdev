@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="style.css" type="text/css"/>
+			
+			<title>
+				EXO TP3 PARTIE 2
+			</title>
+			<meta charset="UTF-8"/>
+		</head>
+		<body>
+		<div id="table_container">
+			<table id="tab" >
+			<tr>
+			<!-- Les titre de chaques collonnes sont  -->
+				<th>N°</th>
+				<th>Non</th>
+				<th>Prénom</th>
+				<th>Point</th>
+				<th>Select</th>
+			</tr>
+			<tr>  <!-- Trois insertions de données dans le tableau -->
+				<td class="col_number">1</td>
+				<td class="col_text">Nom1</td>
+				<td class="col_text">Prénom1</td>
+				<td class="col_number">5</td>
+				<td class="col_chkbox"><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td class="col_number">2</td>
+				<td class="col_text">Nom2</td>
+				<td class="col_text">Prénom2</td>
+				<td class="col_number">5</td>
+				<td class="col_chkbox"><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<td class="col_number">3</td>
+				<td class="col_text">Nom3</td>
+				<td class="col_text">Prénom3</td>
+				<td class="col_number">5</td>
+				<td class="col_chkbox"><input type="checkbox"></td>
+			</tr>
+		</table>
+		<button onclick="doInsertRawTable(99, 'nom', 'prénom', 10)">Ajouter</button> <!-- Ici la fonction doInsertRawTable sera déclancher lors d'un clique.-->
+		
+		</div>
+		
+		</body>
+		<script src="script.js"></script>
+	</html>
+
+

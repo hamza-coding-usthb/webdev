@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<link rel="stylesheet" href="style 4.css" type="text/css"/>
+			
+			<title>
+				EXO TP3 PARTIE 2
+			</title>
+			<meta charset="UTF-8">
+		</head>
+		<body>
+		<div id="table_container">
+			<table id ="tab" border="1">
+			<tr>
+				<th>N°</th>
+				<th>Non</th>
+				<th>Prénom</th>
+				<th>Point</th>
+				<th>Select</th>
+			</tr>
+		</table>
+		<div id= "container_summary">
+			<p id="p1">0 ligne(s)</p> <!-- Ce text affichera le nombre de ligne  -->
+			<p id ="p2"></p> 
+			<p id ="p3">Totale point(s) = 0</p> <!-- Ce text affichera le somme des points  -->
+		</div>
+		<button onclick="doInsert('nom', 'prenom', 10)">Ajouter</button> <!-- ici on utilise doInsert avec des paramètres fixes et l'ajout sera ligne par ligne contrairement à init -->
+		<button onclick="consoleTableau()">Console Tableau</button>
+		</div>
+		
+		</body>
+		<script src="script 4.js"></script>
+	</html>
+
+
